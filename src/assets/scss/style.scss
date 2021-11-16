@@ -20,6 +20,19 @@ body {
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* Blocks */
 @import "blocks/page";
 @import "blocks/header";
@@ -32,3 +45,8 @@ body {
 @import "blocks/profile";
 @import "blocks/social";
 @import "blocks/btn";
+@import "blocks/stories";
+@import "blocks/add-post";
+@import "blocks/post";
+@import "blocks/embed";
+@import "blocks/pagination";
