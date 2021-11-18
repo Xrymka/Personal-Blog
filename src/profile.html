@@ -1,0 +1,37 @@
+---
+layout: default
+title: Personal Blog | Profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" class="form" method="post">
+  <div class="personal">
+    <div class="personal__form">
+      <div class="form__group form__group--md">
+        <input type="text" class="form__control" placeholder="Ваше имя" value="Екатерина Кулинич">
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input type="email" class="form__control" placeholder="Ваш email" value="kulinich@mail.ru">
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input type="password" class="form__control" placeholder="Новый пароль">
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input type="password" class="form__control" placeholder="Подтвердите пароль">
+        <span class="form__line"></span>
+      </div>
+    </div>
+    <div class="personal__avatar">
+      <img src="https://via.placeholder.com/150" alt="аватарка">
+      <label class="personal__file">
+        <input type="file">
+        выбрать аватар
+      </label>
+    </div>
+  </div>
+  <button class="btn  btn--blue  btn--rounded  btn--sm" type="submit">Сохранить</button>
+</form>

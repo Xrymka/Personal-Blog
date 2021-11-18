@@ -1,0 +1,32 @@
+.personal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal__form {
+  width: 34rem;
+}
+
+.personal__avatar {
+
+  img {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.personal__file {
+  font-size: 1.4rem;
+  color: $lightblue;
+  text-decoration: underline;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+
+  &:hover {
+    text-decoration: none;
+  }
+}
