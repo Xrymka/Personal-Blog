@@ -1,6 +1,10 @@
 .personal {
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column-reverse;
+  }
 }
 
 .personal__form {
@@ -8,10 +12,13 @@
 }
 
 .personal__avatar {
-
   img {
     display: block;
     margin-bottom: 1.5rem;
+  }
+
+  @include breakpoint($mobile-bp) {
+    margin-bottom: 2rem;
   }
 }
 

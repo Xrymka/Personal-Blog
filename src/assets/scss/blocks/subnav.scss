@@ -2,13 +2,22 @@
   display: none;
   width: 16.5rem;
 
-  background-color: $blue;
+  background: $blue;
 
   position: absolute;
   top: 100%;
   left: 0;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 6px 8px rgba($black, .2);
+
+  @include breakpoint($tablet-bp) {
+    width: 100%;
+    padding-left: 1rem;
+    position: static;
+
+    background: none;
+    box-shadow: none;
+  }
 }
 
 .subnav__link {
@@ -19,7 +28,7 @@
   color: $white;
   text-decoration: none;
 
-  transition: background-color .2s ease-in-out;
+  transition: background .2s ease-in-out;
 
   &:first-child {
     padding-top: 0.95rem;
@@ -31,6 +40,17 @@
   }
 
   &:hover {
-    background-color: darken($blue, 5%);
+    background: darken($blue, 5%);
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+    padding-right: 0;
+
+    font-size: 1.4rem;
+
+    &:hover {
+      background: none !important;
+    }
   }
 }
