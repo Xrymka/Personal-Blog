@@ -14,6 +14,10 @@
   top: 0;
   left: 0;
   z-index: 1500;
+
+  &.show {
+    display: flex;
+  }
 }
 
 .modal__content {
@@ -24,9 +28,22 @@
 
   background: $primary;
   border-radius: .5rem;
+  opacity: 0;
+
+  transform: translateY(-5rem);
+  transition: transform .2s linear, opacity .2s ease-in-out;
 
   &--bottom {
     padding-bottom: 8rem;
+  }
+
+  &--story {
+    padding: 0;
+    background: none;
+  }
+
+  @include breakpoint($mobile-bp)  {
+    padding: 5rem 2rem 2rem;
   }
 }
 
@@ -67,4 +84,13 @@
       text-decoration: none;
     }
   }
+}
+
+.modal__video {
+  display: block;
+  
+  height: 60rem;
+  margin: 0 auto;
+
+  position: relative;
 }
