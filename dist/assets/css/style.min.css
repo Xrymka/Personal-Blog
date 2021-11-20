@@ -508,8 +508,11 @@ body.no-scroll {
   display: block;
 }
 @media (max-width: 991px) {
-  .nav__item:hover .nav__link {
+  .nav__item:hover .nav__link, .nav__item:focus .nav__link {
     background: none;
+  }
+  .nav__item:hover > .subnav, .nav__item:focus > .subnav {
+    display: block;
   }
 }
 
@@ -1688,7 +1691,6 @@ video {
 
 .modal__video {
   display: block;
-  height: 60rem;
   margin: 0 auto;
   position: relative;
 }

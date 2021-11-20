@@ -35,9 +35,14 @@
   }
 
   @include breakpoint($tablet-bp) {
-    &:hover {
+    &:hover,
+    &:focus {
       .nav__link {
         background: none;
+      }
+
+      > .subnav {
+        display: block;
       }
     }
   }
